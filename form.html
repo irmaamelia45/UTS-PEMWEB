@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulir Pendapat Idola" itemprop="description">
+    <title itemprop="name">Formulir Pendapat - Jacob Collier</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="container-fluid text-center text-white py-5" id="header" itemscope itemtype="http://schema.org/WPHeader">
+        <h1 itemprop="headline">Formulir Pendapat Penggemar Mengenai EXO</h1>
+    </header>
+
+    <!-- Formulir -->
+    <div class="container my-5" itemscope itemtype="http://schema.org/FormAction">
+        <form action="/submit" method="GET">
+            <div class="form-group" itemscope itemtype="http://schema.org/Person">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" class="form-control" required itemprop="name">
+            </div>
+            <div class="form-group">
+                <label for="alamat">Asal Kota:</label>
+                <input type="text" id="alamat" name="alamat" class="form-control" required itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            </div>
+            <div class="form-group">
+                <label for="idol">Idola Favorit:</label>
+                <input type="text" id="idol" name="idol" class="form-control" required itemprop="about">
+            </div>
+            <div class="form-group">
+                <label for="lagu">Lagu Favorit:</label>
+                <input type="text" id="lagu" name="lagu" class="form-control" required itemprop="about">
+            </div>
+            <div class="form-group">
+                <label for="date">Sejak Kapan Mengidolakan:</label>
+                <input type="date" id="date" name="date" class="form-control" itemprop="startDate">
+            </div>
+            <div class="form-group" itemscope itemtype="http://schema.org/AggregateRating">
+                <label for="rating">Berikan Rating:</label><br>
+                <input type="radio" id="rating1" name="rating" value="1" itemprop="ratingValue"> 1
+                <input type="radio" id="rating2" name="rating" value="2" itemprop="ratingValue"> 2
+                <input type="radio" id="rating3" name="rating" value="3" itemprop="ratingValue"> 3
+                <input type="radio" id="rating4" name="rating" value="4" itemprop="ratingValue"> 4
+                <input type="radio" id="rating5" name="rating" value="5" itemprop="ratingValue"> 5
+            </div>
+            <button type="submit" class="btn btn-primary" itemprop="actionStatus">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-center text-white py-3" itemscope itemtype="http://schema.org/WPFooter">
+        <p>&copy; 2024 Exo.</p>
+        <p itemprop="author">Irma Amelia Novianti (122140128)</p>
+        <p><a href="#https://www.instagram.com/irma.aamelia_?igsh=dTMyam14eGxnd2I3" class="text-white" itemprop="sameAs">Instagram</a> | <a href="#" class="text-white" itemprop="sameAs">LinkedIn</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
